@@ -15,19 +15,27 @@ func main() {
 	fmt.println("Get your tickets here to attend")
 
 	
-	
-    
 	var firstName string
-	fmt.Scan("enter your first name: ")
-
 	var lastName string
-	fmt.Scan("enter your last name: ")
-
 	var emailAdress string
-	fmt.Scan("enter your email address: ")
+	var numberOfTickets int
 
-	var numberofTickets int
-	fmt.Scan("enter the number of tickets: ")
+	fmt.Println("enter your first name: ")
+	fmt.Scan(&firstName)
+
+	
+	fmt.Println("enter your last name: ")
+	fmt.Scan(&lastName)
+
+
+	
+	fmt.Println("enter your email address: ")
+	fmt.Scan(&emailAdress)
+
+
+	fmt.Println("enter the number of tickets: ")
+	fmt.Scan(&numberOfTickets)
+
 
 	remainingTickets = remainingTickets - userTickets
 	bookings = append(bookings, firstName + " " + lastName)
